@@ -44,12 +44,12 @@ NCLEX_EPR_path <- paste0(getwd(), wk_folder, "EPR/")
 NGN_EPR_path <- paste0(getwd(), wk_folder, "NGN EPR/")
 ```
 
-Note: After running the program, the EPRs will be automatically removed to the "Processed" subfolders inside the "EPR" and "NGN EPR" folders so that these cases won't be added to the tracking sheet again.
+Note: After running the program, the EPRs will be automatically moved to the subfolder named "Processed" inside the "EPR" and "NGN EPR" folders. The program automatically do so to avoid reading in these cases again next time.
 
 
 3. Specify the result directory to save the generated cumulative LRD tracking sheet. 
 
-For example, the working directory and result directory are set to be the same here. 
+For example, the working directory and result directory are set to be the same here: 
 
 ``` r
 # Specify result directory
@@ -66,7 +66,9 @@ Note: If there's no existing "NGN Cumulative LRDs.xlsx" file in the result direc
 sort = 'ascending'
 ```
 
-5. Specify whether you want to save a separate daily copy of cumulative tracking sheet for records. The cumulative tracking sheet "NGN Cumulative LRDs.xlsx" in the result directory will be overwritten when running the program. If you choose to save a daily copy, the program will automatically create a folder "Copies" and save the daily copy in the folder.
+5. Specify whether you want to save a separate daily copy of cumulative tracking sheet for records. 
+
+The cumulative tracking sheet "NGN Cumulative LRDs.xlsx" in the result directory will be overwritten when running the program. If you choose to save a daily copy, the program will automatically create a folder "Copies" and save the daily copy in the folder.
 
 ``` r
 # Whether to create a daily copy of cumulative tracking sheet
