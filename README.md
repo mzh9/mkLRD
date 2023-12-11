@@ -13,7 +13,7 @@ The goal of mkLRD is to create or update a cumulative tracking sheet for Large R
 
 The tracking sheet is in long format. Each row represents an exam and can be uniquely identified by the column "EPRID".
 
-Should you find any issues, please contact <font size="2"> `Mingqin Zhang` Email: <mzhang@ncsbn.org> </font>
+Should you find any issues, please contact <font size="2"> `Mingqin Zhang` at <mzhang@ncsbn.org> </font>
 
 
 ## Main steps
