@@ -35,7 +35,7 @@ library(pdftools)
 * "EPR" folder to save NCLEX format EPRs.
 * "NGN EPR" folder to save NGN format EPRs.
 
-For new LRD cases, download their EPRs and save to the folder based on format. There's no requirement for EPR file name. Specify the working directory you selected in the program.
+For new LRD cases, download their EPRs and save to the folder based on format. There's no requirement for EPR file name. Specify the working directory you selected in the program:
 
 ``` r
 # Specify working directory
@@ -45,6 +45,7 @@ NGN_EPR_path <- paste0(getwd(), wk_folder, "NGN EPR/")
 ```
 
 Note: After running the program, the EPRs will be automatically removed to the "Processed" subfolders inside the "EPR" and "NGN EPR" folders so that these cases won't be added to the tracking sheet again.
+
 
 3. Specify the result directory to save the generated cumulative LRD tracking sheet. 
 
@@ -56,6 +57,7 @@ result_path <- paste0(getwd(), wk_folder)
 ```
 
 Note: If there's no existing "NGN Cumulative LRDs.xlsx" file in the result directory, the program will generate a new "NGN Cumulative LRDs.xlsx" file after running the program; if there's already an existing "NGN Cumulative LRDs.xlsx" file in the result directory, the program will append the new cases to the existing list and update the "NGN Cumulative LRDs.xlsx" file.
+
 
 4. The generated tracking sheet is sorted by "CustID" and "EPRID". You can specify how exams are sort within each candidate. The default sorting is 'ascending', which sort the tracking sheet by `arrange(CustID, EPRID)`. If you use "descending" sorting, the tracking sheet is sorted by `arrange(CustID, desc(EPRID))`.
 
