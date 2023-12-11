@@ -6,18 +6,16 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-- The goal of mkLRD is to create or update a cumulative tracking sheet for Large Result (Score) Difference cases (since April 1st 2023). Specifically, the program automate the following major steps:
-1)	Extract existing exam information from EPRs of LRD cases (e.g., FName, LName, EPRID, CustID, Attempt, Theta, Time, NItem).
-2)	Create several difference variables based on existing information (e.g., date difference, NItem difference, theta difference, and Time difference)
-3)	Clean cumulative LRD records and produce an organized cumulative tracking sheet.
+The goal of mkLRD is to create or update a cumulative tracking sheet for Large Result (Score) Difference cases (since April 1st 2023). Specifically, the program automate the following major steps:
+1.	Extract existing exam information from EPRs of LRD cases (e.g., FName, LName, EPRID, CustID, Attempt, Theta, Time, NItem).
+2.	Create several difference variables based on existing information (e.g., date difference, NItem difference, theta difference, and Time difference)
+3.	Clean cumulative LRD records and produce an organized cumulative tracking sheet.
 
-- The tracking sheet is in long format. Each row represents an exam and can be uniquely identified by the column "EPRID". 
+The tracking sheet is in long format. Each row represents an exam and can be uniquely identified by the column "EPRID". 
 
-- The program will generate or update a cumulative tracking sheet named "NGN Cumulative LRDs.xlsx" in the specified result directory.
+The program will generate or update a cumulative tracking sheet named "NGN Cumulative LRDs.xlsx" in the specified result directory.
 
-- Should you find any issues, please contact
-
-<font size="2"> `Mingqin Zhang` Email: <mzhang@ncsbn.org> </font>
+Should you find any issues, please contact <font size="2"> `Mingqin Zhang` Email: <mzhang@ncsbn.org> </font>
 
 
 ## Main steps
